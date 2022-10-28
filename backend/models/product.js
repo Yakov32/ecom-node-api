@@ -58,3 +58,20 @@ const productSchema = mongoose.Schema({
 });
 
 exports.Product = mongoose.model('Product', productSchema);
+
+/* test product
+{
+  "name": "zubachistki pachka",
+  "description": "pasha abobys",
+  "richDescription": "a long item in inverntory that true",
+  "image": "some url",
+  "images": [],
+  "brand": "",
+  "price": 0,
+  "category": "63553a8d1dd2813457d6f473",
+  "countInStock": 51,
+  "rating": 0,
+  "numReviews": 0,
+  "isFeatured": true
+}
+*/
