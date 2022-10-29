@@ -18,6 +18,7 @@ app.use(authJwt());
 app.use((error, req, res, next) => {
     res.status(error.status).json(error);
 });
+app.use('/public/upload', express.static(__dirname + '/public/uploads'));
 
 //Routes
 const productsRoutes   = require('./routers/products');
